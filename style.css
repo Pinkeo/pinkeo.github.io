@@ -1,0 +1,40 @@
+
+#html{
+    position: relative;
+    width: 1728px;
+    height: 1949px;
+    overflow-y: scroll;
+    background: #ebecec;
+    left: -878px;
+    top: -549px;
+    border-radius: 0px;
+    
+    justify-content: center;
+}
+.nav ul li{
+    list-style: name ;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(132, 238, 34);
+    text-emphasis: uppercase;
+}
+.banner logo{
+    width: 175px;
+    height: 59px;
+    left: 82px;
+    top: 31px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 59px;
+    /* identical to box height */
+
+
+    color: #634b4b;
+}
