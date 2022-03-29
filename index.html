@@ -1,29 +1,474 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Pinkeo</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>pinkeo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+    </style>
   </head>
-  <body>
-    <div class="banner">
-      <title class="logo"> <a>Pinkeo</a></title>
+<body class="p-light-grey">
 
-      <div class= "nav">
-        <ul>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="aboutme.html"> About me</a></li>
-          <li><a href="Contact.html"> Contact</a></li>
+<!-- Navigation bar with social media icons -->
+
+<!-- p-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="p-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="p-container p-center p-padding-48 p-white" style="border-radius: 0;">
+    <h1 class="p-xxxlarge"><b>Pinkeo</b></h1>
+    <h6 style="padding: 0px;">Welcome to the <span class="p-tag">Pinkeo's world</span>Hehe :)</h6>
+    
+  </header>
+
+  
+  <div class="p-display-left p-padding-large">
+      
+   <!-- <h6><button class="p-button p-white p-padding-large p-large p-opacity p-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+   -->
+  </div>
+
+  <!--====== Design by foolishdeveloper.com =====-->
+  
+  
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Stylesheets-->
+    <style media="screen">
+    	*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: transparent;
+}
+.popup{
+    background-color: #ffffff;
+    width: 85%;
+    padding: 30px 40px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+    position: fixed;
+}
+
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+    
+}
+.close{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: rgb(122, 122, 122);
+    font-size: 30px;
+    color: #ffffff;
+		
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <button id="close" class="close">&times;</button>
+        <i onclick="document.getElementById('subscribe').style.display='none'" ></i>
+
+        <h2 class="p-wide">SUBSCRIBE</h2>
+        <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+        <p><input class="p-input p-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="p-button p-block p-padding-large p-red p-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+        
+    
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+</body>
+
+
+
+
+
+  <!-- Grid -->
+  <div class="p-row p-padding p-border">
+
+    <!-- Blog entries -->
+    <div class="p-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="p-container p-white p-margin p-padding-large">
+        <div class="p-center">
+          <h3>TITLE HEADING</h3>
+          <h5>Title description, <span class="p-opacity">May 2, 2016</span></h5>
+        </div>
+
+        <div class="p-justify">
+          <img src="https://cdn.pixabay.com/photo/2022/03/16/06/18/bird-7071662_960_720.jpg" alt="Girl Hat" style="width:100%" class="p-padding-16">
+          <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p class="p-left"><button class="p-button p-white p-border" onclick="likeFunction(this)"  ><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="p-right"><button class="p-button p-black" id="myBtn" onclick="openTab('http://127.0.0.1:5500/post-1.html')"><b>Readmore>> </b>
+          
+        
+        </button></p>
+          <p class="p-clear"></p>
+          <div class="p-row p-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="p-col l2 m3">
+                <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" style="width:90px;">
+              </div>
+              <div class="p-col l10 m9">
+                <h4>George <span class="p-opacity p-medium">May 3, 2015, 6:32 PM</span></h4>
+                <p>Great blog post! Following</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="p-container p-white p-margin p-padding-large">
+        <div class="p-center">
+          <h3>TITLE HEADING</h3>
+          <h5>Title description, <span class="p-opacity">April 23, 2016</span></h5>
+        </div>
+
+        <div class="p-justify">
+          <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Men in Hats" style="width:100%" class="p-padding-16">
+          <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
+          <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          <p class="p-left"><button class="p-button p-white p-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="p-right"><button class="p-button p-black" id="myBtn" onclick="openTab('http://127.0.0.1:5500/post-2.html#')"><b>Readmore>> </b>
+            <p class="p-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="p-row">
+              <hr>
+              <div class="p-col l2 m3">
+                <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" style="width:90px;">
+              </div>
+              <div class="p-col l10 m9">
+                <h4>Amber <span class="p-opacity p-medium">April 26, 2015, 10:52 PM</span></h4>
+                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+              </div>
+            </div>
+            <div class="p-row p-margin-bottom">
+              <div class="p-col l2 m3">
+                <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" style="width:90px;">
+              </div>
+              <div class="p-col l10 m9">
+                <h4>Angie <span class="p-opacity p-medium">April 23, 2015, 9:12 PM</span></h4>
+                <p>Love hats!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- Blog entry -->
+      <div class="p-container p-white p-margin p-padding-large">
+        <div class="p-center">
+          <h3>TITLE HEADING</h3>
+          <h5>Title description, <span class="p-opacity">April 7, 2016</span></h5>
+        </div>
+
+        <div class="p-justify">
+          <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Runway" style="width:100%" class="p-padding-16">
+          <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>
+          <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          <p class="p-left"><button class="p-button p-white p-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="p-right"><button class="p-button p-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="p-tag p-white">3</span></button></p>
+          <p class="p-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="p-row p-margin-bottom">
+              <div class="p-col l2 m3">
+                <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" style="width:90px;">
+              </div>
+              <div class="p-col l10 m9">
+                <h4>Jane <span class="p-opacity p-medium">April 10, 2015, 7:22 PM</span></h4>
+                <p>That was a great runway show! Thanks for everything.</p>
+              </div>
+            </div>
+            <div class="p-row p-margin-bottom">
+              <div class="p-col l2 m3">
+                <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" style="width:90px;">
+              </div>
+              <div class="p-col l10 m9">
+                <h4>John <span class="p-opacity p-medium">April 8, 2015, 10:32 PM</span></h4>
+                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+            </div>
+            <div class="p-row p-margin-bottom">
+              <div class="p-col l2 m3">
+                <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" style="width:90px;">
+              </div>
+              <div class="p-col l10 m9">
+                <h4>Anja <span class="p-opacity p-medium">April 7, 2015, 9:12 PM</span></h4>
+                <p>Cant wait for the runway to start!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="p-col l4">
+
+      <!-- About Card -->
+      <div class="p-white p-margin">
+      <!--
+        <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Jane" style="width:100%" class="p-grayscale">
+      -->
+        <div class="p-container p-black" >
+          <h4>My Name</h4>
+          <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+        
+        </div>
+      </div>
+      <hr>
+    
+      <!-- Posts -->
+
+      <div class="p-white p-margin" >
+        <div class="p-container p-padding p-black" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="p-ul p-hoverable p-white" >
+          <li class="p-padding-16" >
+            <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Image" class="p-left p-margin-right" style="width:50px">
+            <span class="p-large">Denim</span>
+            <br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="p-padding-16">
+            <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Image" class="p-left p-margin-right" style="width:50px">
+            <span class="p-large">Sweaters</span>
+            <br>
+            <span>Praes tinci sed</span>
+          </li>
+          <li class="p-padding-16">
+            <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Image" class="p-left p-margin-right" style="width:50px">
+            <span class="p-large">Workshop</span>
+            <br>
+            <span>Ultricies congue</span>
+          </li>
+          <li class="p-padding-16">
+            <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Image" class="p-left p-margin-right p-sepia" style="width:50px">
+            <span class="p-large">Trends</span>
+            <br>
+            <span>Lorem ipsum dipsum</span>
+          </li>
         </ul>
       </div>
+      <hr>
+
+      <!-- Advertising -->
+    <!--
+      <div class="p-white p-margin">
+        <div class="p-container p-padding p-black"style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <h4>Advertise</h4>
+        </div>
+        <div class="p-container p-white">
+          
+          
+          <div class="p-container p-display-container p-light-grey p-section" style="height:200px" >
+        
+          <button class="bt"onclick="openTab('https://youtu.be/dQw4w9WgXcQ')"> <b>Click for 110 years of good luck :)</b></button>
+          <style>
+            
+            
+            .bt{
+              margin: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              border: none;
+              font-size: larger;
+              border-radius: 5px;
+              background-image: linear-gradient(to right, rgb(173, 139, 139),rgb(226, 203, 161),rgb(216, 216, 167),rgb(120, 202, 120),rgb(199, 199, 247),rgb(200, 167, 224),rgb(236, 165, 236));
+            }
+            </style>
+          
+            
+          </div>
+        </div>
+      </div>
+      <hr>
+    -->
+
+      <!-- Tags -->
+      <div class="p-white p-margin">
+        <div class="p-container p-padding p-black" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <h4>Tags</h4>
+        </div>
+        <div class="p-container p-white">
+          <p>
+            <span class="p-tag p-black p-margin-bottom">Fashion</span> <span class="p-tag p-light-grey p-small p-margin-bottom">New York</span> <span class="p-tag p-light-grey p-small p-margin-bottom">London</span>
+            <span class="p-tag p-light-grey p-small p-margin-bottom">Hats</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Norway</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Sweaters</span>
+            <span class="p-tag p-light-grey p-small p-margin-bottom">Ideas</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Deals</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Accessories</span>
+            <span class="p-tag p-light-grey p-small p-margin-bottom">News</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Clothing</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Shopping</span>
+            <span class="p-tag p-light-grey p-small p-margin-bottom">Jeans</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Trends</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+ <!-- Inspiration
+      <div class="p-white p-margin">
+        <div class="p-container p-padding p-black" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <h4>Inspiration</h4>
+        </div>
+        <div class="p-row-padding p-white">
+          <div class="p-col s6">
+            <p><img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Jeans" style="width:100%"></p>
+            <p><img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="p-col s6">
+            <p><img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Men in Hats" style="width:100%" class="p-grayscale"></p>
+            <p><img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+ -->
+      <div class="p-white p-margin">
+        <div class="p-container p-padding p-black" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <h4>Let's connect</h4>
+        </div>
+        <div class="p-container p-xlarge p-padding">
+          <i onclick="openTab('mailto:pinnepinny@gmail.com')"class="fa fa-send-o p-hover-opacity"></i>
+          <i onclick="openTab('https:instagram.com/pinkeo_o')" class="fa fa-instagram p-hover-opacity"></i>
+          <i onclick="openTab('https:snapchat.com/pinkeo_o')" class="fa fa-snapchat p-hover-opacity"></i>
+          <i onclick="openTab('https://open.spotify.com/user/lc3axzqf3jthvd6kmnnmvodug')" class="fa fa-spotify p-hover-opacity"></i>
+          <i onclick="openTab('https:github.com/pinkeo')"class="fa fa-github p-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="p-white p-margin">
+        <div class="p-container p-padding p-black" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="p-container p-white">
+          <p style="margin-bottom: 1rem;">Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="p-input p-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="p-button p-block p-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
     </div>
-        Hello world
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END p-content -->
+</div>
+
+<!-- Subscribe Modal -->
+
+<!-- Footer.  -->
 
 
+<h6> © All Rights Reserved and all that stuff<br> Host with Github <i class="fa fa-github p-hover-opacity"></i></h6>
 
 
-    <!---------------------------script----------------------------->
-    <script src="script.js"></script>
-  </body>
+<style>
+  h6 {text-align: center; font-family: sans-serif; padding: 3rem; }
+</style>
+
+
+<!--  
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("p-show") == -1) {
+    x.className += " p-show";
+  } 
+  else { 
+    x.className = x.className.replace(" p-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+-->
+<script>
+  function openTab(url) {
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_self';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+  function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+  }
+  </script>
+
+</body>
+
 </html>
+

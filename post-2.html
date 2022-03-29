@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>pinkeo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+    </style>
+ 
+  
+  <!--====== Design by foolishdeveloper.com =====-->
+  
+  
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Stylesheets-->
+    <style media="screen">
+    	*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: transparent;
+}
+.popup{
+    background-color: #ffffff;
+    width: 85%;
+    padding: 30px 40px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+    position: fixed;
+}
+/*.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: blanchedalmond;
+    font-size: 30px;
+    color: #ffffff;
+		
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+*/
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+    
+}
+.close{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: rgb(122, 122, 122);
+    font-size: 30px;
+    color: #ffffff;
+		
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <button id="close" class="close">&times;</button>
+        <i onclick="document.getElementById('subscribe').style.display='none'" ></i>
+
+        <h2 class="p-wide">SUBSCRIBE</h2>
+        <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+        <p><input class="p-input p-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="p-button p-block p-padding-large p-red p-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+        
+    
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+</body>
+
+
+
+
+<body class="p-light-grey">
+    <div class="p-content" style="max-width:1600px">
+      
+  <!-- Header -->
+  <header class="p-container p-center p-padding-48 p-white" style="border-radius: 0;">
+    
+    <h1 onclick="openTab('http://127.0.0.1:5500/index.html')" class="p-xxxlarge" style="text-align: left; padding-left: 3rem;"><b>Pinkeo</b><br></h1>
+    <div class="menu">
+        <li>Home</li>
+        <li>About me</li>
+        <li>Contact</li>
+    </div>
+    
+    
+
+
+    </header>
+   
+    
+
+
+    <!--Article-->
+
+    <div class="p-container p-white p-margin p-padding-large">
+        <div class="p-center">
+          <h3>ນິໄສບໍ່ດີ ທີ່ຄວນຢຸດ ຖ້າຢາກໃຫ້ຊີວິດດີຂຶ້ນ</h3>
+          <h5>Title description, <span class="p-opacity">ມີນາ 7, 2022</span></h5>
+        </div>
+
+        <div class="p-justify">
+          <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Runway" style="width:100%" class="p-padding-16">
+
+    <p>
+    ນິໄສຄືພຶດຕິກຳທີ່ເຮົາເຮັດເປັນປະຈຳເລື້ອຍໆ ຈົນກາຍເປັນຄວາມເຄີຍຊິນ ແລະກາຍເປັນການກະທຳແບບອັດຕະໂນມັດໂດຍບໍ່ຕ້ອງພະຍາຍາມ. ນິໄສບໍ່ດີ ຄືສິ່ງທີ່ມັກເຮັດໃຫ້ເຮົາພົບບັນຫາຕ່າງໆໃນຊີວິດຕັ້ງແຕ່ເລື່ອງເລັກນ້ອຍ ໄປຈົນເຖິງເລື່ອງໃຫຍ່,ບາງນິໄສອາດບໍ່ສ້າງອຸປະສັກແກ່ເຮົາ ແຕ່ກໍອາດເປັນສິ່ງທີ່ເຮັດໃຫ້ເຮົາຢູ່ຈຸດເກົ່າ ແລະບໍ່ພັດທະນາໄປໃສຈັກເທື່ອ, ແລະເນື່ອງຈາກນິໄສສາມາດກຳນົດຄວາມເປັນຕົວຕົນຂອງເຮົາ ການສະແດງນິໄສທີ່ບໍ່ດີກໍສົງຜົນຕໍ່ບຸກຄະລິກກະພາບເຮົາອີກດ້ວຍ.
+    ບາງຄົນມີນິໄສບໍ່ດີ ແຕ່ອາດຈະບໍ່ຮູ້ຕົວ. ສະນັ້ນມີ້ນີ້ ເຮົາມີ 8ນິໄສບໍ່ດີ ທີ່ຄວນຢຸດໄດ້ແລ້ວ ຖ້າເຈົ້າຢາກເຫັນການປ່ຽນແປງໃນຊີວິດມາສຳຫຼວດເບິ່ງວ່າທຸກຄົນມີນິໄສເຫຼົ່ານີ້ກັນຫຼືບໍ່:<br>
+    <br>
+    1.ນອນເດິກ-ຕື່ນສວາຍ:<br>
+    ການນອນຫຼັບພັກຜ່ອນໃຫ້ພຽງພໍເປັນສິ່ງໜຶ່ງທີ່ສຳຄັນຕໍ່ສຸຂະພາບຫຼາຍ,ບາງຄົນນອນເດິກເພາະມີວຽກທີ່ຕ້ອງຈັດການໃຫ້ແລ້ວ, ບາງຄົນນອນເດິກເພາະເບິ່ງລະຄອນ,ຊີຣີ ຫຼືຫຼິ້ນເກມ ເຮັດໃຫ້ຕ້ອງໄດ້ຕື່ນສວາຍໃນຕອນເຊົ້າ. ການນອນເດິກນອກຈາກຈະເປັນສາເຫດໃຫ້ເຮົາຕື່ນສວາຍແລ້ວ ຍັງມີຜົນເຮັດໃຫ້ການເຮັດວຽກບໍ່ມີປະສິດທິພາບນຳອີກ ເຮັດໃຫ້ເຮົາເມື່ອຍ ແລະງ່ວງນອນຢູ່ຕະຫຼອດເວລາ, ແລະບັນຫາກວນໃຈຫຼາຍຄົນຄື “ສິວ”. ນອກຈາກນັ້ນຍັງສົ່ງຜົນກະທົບຕໍ່ສຸຂະພາບໃນໄລຍະຍາວເຊັ່ນ ສຸຂະພາບຈິດ, ເພີ່ມຄວາມສ່ຽງການເປັນໂລກຫົວໃຈ, ເບົາຫວານ ແລະໂລກອ້ວນ. ການຕື່ນສວາຍກໍເຊັ່ນກັນ ເຖິງມັນຈະເປັນການປະຢັດເຂົ້າເຊົ້າ ແຕ່ໃນຊ່ວງເວລາຕອນເຊົ້າສະໝອງຂອງເຮົາເຮັດວຽກໄດ້ດີມີປະສິດທິພາບ ມັນບໍ່ຄຸ້ມດອກກັບການເສຍເວລາຊ່ວງຕອນເຊົ້າໄປກັບການນອນ. ພະຍາຍາມລົດນິໄສນອນເດິກ-ຕື່ນສວາຍລົງຈະເປັນການດີ ໂດຍການເຂົ້ານອນແຕ່ຫົວຄຳ່, ຫຼີກລ່ຽງການໃຊ້ໂທລະສັບກ່ອນເຂົ້ານອນ, ສຳລັບໃຜທີ່ມີບັນຫາສຸຂະພາບ ເຮັດໃຫ້ນອນບໍ່ຫຼັບ ແນະນຳໃຫ້ໄປພົບໝໍ ແລະແກ້ບັນຫາທີ່ຕົ້ນເຫດ.<br><br>
+
+    2. ຜັດມື້ ຜັດວັນ:<br><br>
+    
+         ຄືການຕັ້ງໃຈວ່າຊິເຮັດ ແຕ່ບໍ່ເຮັດ ແລ້ວບອກວ່າ ມື່ອື່ນຈຶ່ງເຮັດກໍໄດ້, ແລ້ວຈຶ່ງເຮັດ, ບໍ່ຟ້າວເຮັດກໍໄດ້... ແລ້ວເມື່ອເຖິງເວລາທີ່ມັນຄວນແລ້ວ ມັນອາດຈະບໍ່ແລ້ວ,ນັ້ນຍິ່ງເປັນການເພີ່ມຄວາມຄຽດ ແລະນີ້ກໍເປັນນິໄສຫຼັກໆ ທີ່ເຮັດໃຫ້ຫຼາຍຄົນບໍ່ປະສົບຜົນສຳເລັດໃນຊີວິດ. ສ່ວນວິທີຢຸດນິໄສນີ້ ກໍພຽງແຕ່ “ຢຸດ”, ບໍ່ມີວິທີງ່າຍກວ່ານີ້ແລ້ວ ຖ້າຢາກເຮັດວຽກໃຫ້ແລ້ວ ກໍພຽງແຕ່ໄປເຮັດໃຫ້ມັນແລ້ວ ແຕ່ກໍຢ່າກົດດັນຈົນເກີນໄປ, ຈັດການເວລາໃຫ້ເໝາະສົມ ແລະຢຸດບອກວ່າ ”ແລ້ວຈຶ່ງເຮັດ”
+    <br><br>
+    
+    
+    3. ຕວົະ:
+    <br><br>
+     ມີຫຼາຍເຫດຜົນທີ່ເຮັດໃຫ້ຄົນເຮົາຕົວະ ນັບຕັ້ງແຕ່ເລື່ອງເລັກນ້ອຍ ໄປຈົນເຖິງເລື່ອໃຫຍ່ ຫຼາຍຄົນຕວົະເພື່ອຮັກສາກຽດຂອງຕົນເອງ, ເພື່ອຜົນປະໂຫຍດສ່ວນຕົວ ແລະເພາະເຮົາບໍ່ຢາກເອົາຕົວເອງເຂົ້າໄປໃນສະຖານະການທີ່ອຶດອັດ ຈຶ່ງເລືອກຕວົະ ແທນທີ່ຈະເວົ້າຄວາມຈິງ ແຕ່ນັ້ນເປັນພຽງການແກ້ບັນຫາພຽງຊົ່ວຄາວ ແລະການຕົວະໜຶ່ງຄັ້ງກໍເພີ່ມໂອກາດໃຫ້ກັບການຕົວະຄັ້ງຕໍ່ໄປເລື້ອຍໆ ແລະຄືທີ່ຮູ້ກັນວ່າ “ຄວາມລັບ ບໍ່ມີໃນໂລກ” ສຸດທ້າຍຍ້ອນຄຳຕວົະຂອງເຮົາເອງທີ່ສ້າງບັນຫາໃຫ້ເຮົາ. ສະນັ້ນ ຢຸດຕົວະ ບໍ່ວ່າກັບໃຜ ພໍ່ແມ່, ຄົນຮັກ, ໝູ່ຄູ່ ລວມທັງຕົວເອງ, ຍອມຮັບຄວາມຈິງ ແລ້ວທຸກຢ່າງຈະດີເອງ.
+    <br><br>
+    
+    4. ຈົ່ມ:
+    <br><br>
+     ຝົນຕົກກໍຈົ່ມ ຟ້າແດດກໍຈົ່ມ ທີ່ເຮົາຈົ່ມເພາະເຮົາເຮັດຫຍັງບໍ່ໄດ້ ຫຼືບໍ່ເຄີຍຄິດທີ່ຈະເຮັດຫຍັງເລີຍ? ແນ່ນອນເຮົາຄວບຄຸມຟ້າຝົນບໍ່ໄດ້ ແລະການຈົ່ມກໍບໍ່ໄດ້ຊ່ວຍຫຍັງ. ບາງຄົນກໍອາດຈະບໍ່ຮູ້ຕົວວ່າເປັນຄົນຂີ້ຈົ່ມ ອາຈານໃຫ້ວຽກບ້ານຫຼາຍ ກໍຈົ່ມວ່າ” ອາຈານໃຫ້ວຽກບ້ານຫຼາຍແທ້” ລາຄາຊີ້ນໝູແພງ ກໍຈົມວ່າຊີ້ນໝູແພງ ແລ້ວການຈົ່ມມັນຊ່ວຍຫຍັງ ແນ່ນອນມັນບໍ່ຊ່ວຍໃຫ້ຊີ້ນໝູຖືກລົງ, ນັກຮຽນຫຼາຍຄົນຈົ່ມວ່າ ຮຽນບໍ່ເກັ່ງໃນຂະນະທີ່ພວກເຂົາບໍ່ເຄີຍພະຍາຍາມເລີຍ. ຄັ້ງໜ້າຖ້າເຈົ້າຢາກຈົ່ມ ຖາມຕົວເອງກ່ອນວ່າ “ການຈົ່ມຊ່ວຍຫຍັງ ແລະເຮົາເຮັດຫຍັງບໍ່ໄດ້ເລີຍຫວາ ນອກຈາກຈົ່ມ?
+     <br><br>
+    
+    5. ບໍ່ກ້າເຮັດສິ່ງໃໝ່ໆ ເພາະມັນຍາກ :
+    <br><br>
+     ເຮົາຈະພັດທະນາໄດ້ແນວໃດ ຖ້າບໍ່ເຮັດໃນສິ່ງທີ່ຍາກ, ສຳລັບບາງເລື່ອງ ມັນຍາກແຕ່ຕອນເລີ່ມຕົ້ນ ແລ້ວພໍເຮັດໄປເລື້ອຍໆ ມັນກໍຈະຍາກຂຶ້ນ ແມ່ນແລ້ວ ມັນຈະຍາກຂຶ້ນເພາະເຈົ້າກຳລັງພັດທະນາ ແລະຖ້າຜ່ານມັນໄປໄດ້ ກໍ່ໝາຍຄວາມວ່າເຈົ້າໄດ້ພັດທະນາຕົນເອງມາອີກຂັ້ນແລ້ວ. ການຢູ່ໃນຂອບເຂດທີ່ເອີ້ນວ່າ comfort zone ບໍ່ແມ່ນທາງເລືອກທີ່ດີໃນການພັດທະນາຕົນເອງ ຄວາມສະບາຍທີ່ເຈົ້າມີໃນຕອນນີ້ ອາດເຮັດໃຫ້ເຈົ້າລຳບາກໃນອະນາຄົດ. ”ຖ້າເຮົາຢາກໄດ້ ສິ່ງທີ່ເຮົາບໍ່ເຄີຍໄດ້ ເຮົາກໍຕ້ອງເຮັດ ໃນສິ່ງທີ່ເຮົາບໍ່ເຄີຍເຮັດ”
+    
+     <br><br>
+    6. ໃຊ້ເງິນເກີນຕົວ:
+    <br><br>
+     ການໃຊ້ເງິນເກີນຕົວ ຫຼືຈ່າຍ ຫຼາຍກວ່າຫາ ມັກນຳຫຼາຍຄົນໄປສູ່ວົງຈອນໜຶ່ງທີ່ເອີ້ນວ່າ “ວົງຈອນໜິ້ສິນ” ຢືມເງິນເພື່ອມາຊື້ສິ່ງທີ່ຢາກໄດ້(ແຕ່ບໍ່ຈຳເປັນຕ້ອງມີ) ແລ້ວຫາເງິນເພື່ອໃຊ້ໜິ້. ການມີໜີ້ຕັ້ງແຕ່ອາຍຸຍັງນ້ອຍ ບໍ່ແມ່ນສິ່ງທີ່ທຸກຄົນຢາກຈະເປັນ ແຕ່ມັນກໍຫຼີກລ່ຽງໄດ້ຍາກ ເມື່ອນິໄສການໃຊ້ເງິນເກີນຕົວຄືສິ່ງທີ່ຕິດຕົວ ມັນອາດສົ່ງຜົນໄປຈົນເຖິງອະນາຄົດ ເມື່ອເຈົ້າມີພາລະຫຼາຍຂຶ້ນ ມັນກໍກາຍເປັນບັນຫາໃຫຍ່ໃນຊີວິດໄດ້. ຫຼາຍຄົນບໍ່ມີຄວາມສາມາດໃນການບໍລິຫານເງິນເດືອນຂອງຕົນເອງ ກໍເພາະວ່າບໍ່ເຄີຍໄດ້ຮຽນຮູ້ເລີຍວ່າຕ້ອງເຮັດແນວໃດ, ລອງໃຊ້ເທັກນິກ 40:40:20 ໂດຍການແຍກເງິນ 40%ສ່ວນທຳອິດໄວ້ສະສາງລາຍຈ່າຍທີ່ຕ້ອງໄດ້ຈ່າຍທຸກເດືອນເຊັ່ນ: ຄ່ານຳ້,ຄ່າໄຟ,ຄ່າໂທລະສັບ,ຄ່າເຊົ່າ,ຄ່າຜ່ອນລົດ. ອີກ 40% ໄວ້ໃຊ້ສອຍທົ່ວໄປໃນຊີວິດປະຈຳວັນ ແລະອີກ 20% ທີ່ເຫຼືອແມ່ນເປັນການທ້ອນແຮໄວ້ໃຊ່ຍາມສຸກເສີນ ເຊິ່ງອາດຈະເອົາເງິນຈຳນວນນັ້ນໄປເຂົ້າທະນາຄານ ຫຼືແບ່ງສ່ວນໜຶ່ງໄປລົງທຶນເພື່ອໃຫ້ໄດ້ຮັບຜົນຕອບແທນ ແຕ່ກໍຄວນຈະມີເຫຼືໄວ້ເພື່ອໃຊ້ຍາມສຸກເສີນ ຢ່າເອົາໄປລົງທຶນຈົນໝົດ. ແລະທີ່ສຳຄັນແມ່ນຄວນຫຼີກລ່ຽງການເປັນໜີ້.
+    
+     <br><br>
+    7. ໂທດຄົນອື່ນ:
+    <br><br>
+     ຄົນຈຳນວນຫຼາຍມັກໂທດຄົນອື່ນຈົນເປັນນິໄສ ໂທດທຸກຢ່າງນອກຈາກຕົວເອງ, ອັນໃດບໍ່ດີກໍໂຍນຄວາມຜິດໃຫ້ຄົນນັ້ນຄົນນີ້, ຮຽນບໍ່ເກັ່ງ ກໍໂທດວ່າຄູສອນບໍ່ດີ, ເສດຖະກິດບໍ່ດີ ກໍໂທດວ່າເປັນຍ້ອນເງິນເຟີ້, ຢຸດໂທດສິ່ງຕ່າງໆ ໂດຍສະເພາະສິ່ງທີ່ຢູ່ເໜືອການຄວບຄຸມຂອງເຮົາ ແລ້ວລອງກັບມາຖາມໂຕເອງວ່າ “ເຮົາສາມາດເຮັດຫຍັງໄດ້ແນ່ເພື່ອແກ້ໄຂສິ່ງທີ່ເກີດຂຶ້ນ?” ແລ້ວເຮັດໃຫ້ມັນດີຂຶ້ນ.
+     <br><br>
+    
+    8. ເສຍເວລາກັບ social media:  <br><br>
+    
+     ເວລາຄືສິ່ງທີ່ເຮົາເສຍໄປ ແລ້ວຈະບໍ່ໄດ້ກັບຄືນມາ. ສິ່ງໜຶ່ງທີ່ເຮັດໃຫ້ຫຼາຍຄົນເສຍເວລາຊີວິດນັ້ນກໍຄື social media ເຮົາເສຍເວລາ ກັບການເລື່ອນເຟສ, ເບິ່ງ YouTube , TikTok ຫຼືຖ່າຍຮູບເປັນສິບຮູບເພື່ອເລືອກເອົາຮູບດຽວລົງ Instagram. ເຮົາເສຍເວລາໄປບໍ່ຫນ້ອຍໃນແຕ່ລະມື້ ເປັນຊົ່ວໂມງ ສອງຊົ່ວໂມງ (ບາງຄົນກໍຫຼາຍກວ່ານັ້ນ) ແລ້ວສິ່ງທີ່ເຮົາໄດ້ຈາກສື່ອອນລາຍເຫຼົ່ານັ້ນ ມີປະໂຫຍດແກ່ເຮົາເທົ່າໃດ? ມັນອາດມີ ແຕ່ໜ້ອຍກວ່າເມື່ອທຽບກັບສິ່ງທີ່ມັນເອົາໄປຈາກເຮົາ ນັ້ນຄືເວລາ ແລະສຳຄັນໄປກວ່ານັ້ນຄືສຸຂະພາບຈິດ, ຫຼາຍຄັ້ງປານໃດທີ່ເຮົາໄດ້ເຫັນຊີວິດຄົນອື່ນໃນ social media ແລ້ວມາປຽບທຽບກັບຊີວິດຕົນເອງ ແລ້ວຮູ້ສຶກວ່າຊີວິດເຮົາບໍ່ເຫັນມີຫຍັງດີເລີຍ, ຄວາມຄິດເຫຼົ່ານັ້ນໄດ້ສະສົມ ແລະສົ່ງຜົນກະທົບແກ່ສຸຂະພາບຈິດເຮົາໃນທີ່ສຸດ. ເມື່ອຮູ້ວ່າເວລາມີຄ່າ ແລ້ວເປັນຫຍັງເຮົາບໍ່ເອົາເວລາໄປເຮັດສິ່ງອື່ນທີ່ດີຕໍ່ຕົວເອງ , ລອງເອົາເວລາມາຮຽນຮູ້ທັກສະໃໝ່ໆ ເພື່ອພັດທະນາຕົນເອງ ,ໃຊ້ເວລາກັບຄອບຄົວ ກັບຄົນທີ່ເຮົາຮັກ ຈະດີກວ່າເສຍເວລາໝົກໝຸ້ນກັບຊີວິດຂອງຄົນອື່ນທີ່ເຮົາແທບບໍ່ຮູ້ຈັກ.
+     <br><br>
+     ________________________________  <br><br>
+     ແຫລ່ງຂໍ້ມູນອ້າງອີງ  <br><br>
+    
+     https://moneyhub.in.th/article/salary-plan-4/?amp  <br><br>
+    
+     https://www.pobpad.com/นอนดึก-ภัยเงียบต่อสุขภา  <br><br>
+    
+    
+    </p>
+    </div> 
+
+    <hr>
+
+    
+    
+    <div class="p-white p-margin">
+        <div class="p-container p-padding p-black" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="p-container p-white">
+          <p style="margin-bottom: 1rem;">Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="p-input p-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="p-button p-block p-red">Subscribe</button></p>
+        </div>
+      </div>
+    <!--Article-->
+    <div class="p-white p-margin" >
+        <div class="p-container p-padding p-black" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="p-ul p-hoverable p-white" >
+          <li class="p-padding-16" >
+            <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Image" class="p-left p-margin-right" style="width:50px">
+            <span class="p-large">Denim</span>
+            <br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="p-padding-16">
+            <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Image" class="p-left p-margin-right" style="width:50px">
+            <span class="p-large">Sweaters</span>
+            <br>
+            <span>Praes tinci sed</span>
+          </li>
+          <li class="p-padding-16">
+            <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Image" class="p-left p-margin-right" style="width:50px">
+            <span class="p-large">Workshop</span>
+            <br>
+            <span>Ultricies congue</span>
+          </li>
+          <li class="p-padding-16">
+            <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" alt="Image" class="p-left p-margin-right p-sepia" style="width:50px">
+            <span class="p-large">Trends</span>
+            <br>
+            <span>Lorem ipsum dipsum</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+<div class="p-white p-margin">
+    <div class="p-container p-padding p-black" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+      <h4>Tags</h4>
+    </div>
+    <div class="p-container p-white">
+      <p>
+        <span class="p-tag p-black p-margin-bottom">Fashion</span> <span class="p-tag p-light-grey p-small p-margin-bottom">New York</span> <span class="p-tag p-light-grey p-small p-margin-bottom">London</span>
+        <span class="p-tag p-light-grey p-small p-margin-bottom">Hats</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Norway</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Sweaters</span>
+        <span class="p-tag p-light-grey p-small p-margin-bottom">Ideas</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Deals</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Accessories</span>
+        <span class="p-tag p-light-grey p-small p-margin-bottom">News</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Clothing</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Shopping</span>
+        <span class="p-tag p-light-grey p-small p-margin-bottom">Jeans</span> <span class="p-tag p-light-grey p-small p-margin-bottom">Trends</span>
+      </p>
+    </div>
+  </div>
+  <hr>
+
+
+<div class="p-white p-margin">
+
+    <div class="p-container p-xlarge p-padding" style="text-align: center;">
+      <i onclick="openTab('mailto:pinnepinny@gmail.com')"class="fa fa-send-o p-hover-opacity"></i>
+      <i onclick="openTab('https:instagram.com/pinkeo_o')" class="fa fa-instagram p-hover-opacity"></i>
+      <i onclick="openTab('https:snapchat.com/pinkeo_o')" class="fa fa-snapchat p-hover-opacity"></i>
+      <i onclick="openTab('https://open.spotify.com/user/lc3axzqf3jthvd6kmnnmvodug')" class="fa fa-spotify p-hover-opacity"></i>
+      <i onclick="openTab('https:github.com/pinkeo')"class="fa fa-github p-hover-opacity"></i>
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+  <!----------------------------footer------------------------------------->
+<h6> © All Rights Reserved and all that stuff<br> Host with Github <i class="fa fa-github p-hover-opacity"></i></h6>
+
+
+
+
+<!--------------------------styles-------------------------------->
+
+<style>
+  h6 {text-align: center; font-family: sans-serif; padding: 3rem; }
+  .article{
+      background: whitesmoke;
+  }
+  
+  li{
+      display: block;
+  }
+</style>
+
+
+<!--   -------------------------------script-------------------------------------->
+  <script>
+    function openTab(url) {
+      const link = document.createElement('a');
+      link.href = url;
+      link.target = '_self';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
+    function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+    }
+    </script>
+
+</body>
+</html>  
