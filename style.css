@@ -438,18 +438,22 @@ a{color:inherit}
 .p-leftbar{border-left:6px solid #ccc!important}
 .p-rightbar{border-right:6px solid #ccc!important}
 .p-section,.p-code{margin-top:16px!important;margin-bottom:16px!important}
-.p-margin{margin:16px!important}
+@media (max-width:500px){
+    .p-margin{margin:8px!important}
+    .p-padding{padding:8px 3px!important}
+}
+.p-margin{margin:16px}
 .p-margin-top{margin-top:16px!important}
 .p-margin-bottom{margin-bottom:16px!important}
 .p-margin-left{margin-left:16px!important}
 .p-margin-right{margin-right:16px!important}
 .p-padding-small{padding:4px 8px!important}
-.p-padding{padding:8px 16px!important}
+.p-padding{padding:6px 18px}
 .p-padding-large{padding:12px 24px!important}
 .p-padding-16{padding-top:16px!important;padding-bottom:16px!important}
 .p-padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .p-padding-32{padding-top:32px!important;padding-bottom:32px!important}
-.p-padding-48{padding-top:9px!important;padding-bottom:25px!important}
+.p-padding-48{padding-top:40px!important;padding-bottom:40px!important}
 .p-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .p-padding-top-64{padding-top:64px!important}
 .p-padding-top-48{padding-top:40px!important}
@@ -486,7 +490,7 @@ a{color:inherit}
 .p-white,.p-hover-white:hover{color:#000!important;background-color:#fff!important;border-radius: 5px;}
 .p-black,.p-hover-black:hover{color:#fff!important;background-color:#000000b3;border-radius: 5px;}
 .p-grey,.p-hover-grey:hover,.p-gray,.p-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
-.p-light-grey,.p-hover-light-grey:hover,.p-light-gray,.p-hover-light-gray:hover{color:#000!important;background-color:#d1d1d1}
+.p-light-grey,.p-hover-light-grey:hover,.p-light-gray,.p-hover-light-gray:hover{color:#000!important;background-color:#f3f0f08c!important}
 .p-dark-grey,.p-hover-dark-grey:hover,.p-dark-gray,.p-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
 .p-pale-red,.p-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
 .p-pale-green,.p-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
