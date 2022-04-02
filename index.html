@@ -194,7 +194,7 @@ document.querySelector("#close").addEventListener("click", function(){
             magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
           <p class="p-left"><button class="p-button p-white p-border" onclick="likeFunction(this)"  ><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="p-right"><button class="p-button p-black" id="myBtn" onclick="openTab('http://127.0.0.1:5500/post-1.html')"><b>Readmore>> </b>
+          <p class="p-right"><button class="p-button p-black" id="myBtn" onclick="openTab('http://127.0.0.1:5500/post-1.html')"><a href="post-2.html">Readmore>> </a>
           
         
         </button></p>
@@ -432,23 +432,24 @@ document.querySelector("#close").addEventListener("click", function(){
       <div class="p-white p-margin">
         <div class="p-container p-padding p-black" style=" padding: 6px 18px!important;border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
           <h4>Let's connect</h4>
+          
         </div>
-        <div class="p-container p-xlarge p-padding">
-          <i onclick="openTab('mailto:pinkeo@duck.com')"class="fa fa-send-o p-hover-opacity"></i>
-          <i onclick="openTab('https://www.instagram.com/pinkeo_o/')" class="fa fa-instagram p-hover-opacity"></i>
-          <i onclick="openTab('https://www.snapchat.com/add/pinkeo.k?share_id=pQSciwefGFk&locale=en-US')" class="fa fa-snapchat p-hover-opacity"></i>
-          <i onclick="openTab('https://open.spotify.com/user/lc3axzqf3jthvd6kmnnmvodug?si=7crS16ABSQeZiLGka88sFw&utm_source=copy-link)" class="fa fa-spotify p-hover-opacity"></i>
-          <i onclick="openTab('https://github.com/Pinkeo/')" class="fa fa-github p-hover-opacity"></i>
+          <div class="p-container p-xlarge p-padding" style="text-align: center;">
+            <i onclick="openTab('mailto:pinnepinny@gmail.com')"class="fa fa-send-o p-hover-opacity"></i>
+            <i onclick="openTab('https:instagram.com/pinkeo_o')" class="fa fa-instagram p-hover-opacity"></i>
+            <i onclick="openTab('https:snapchat.com/pinkeo_o')" class="fa fa-snapchat p-hover-opacity"></i>
+            <i onclick="openTab('https://open.spotify.com/user/lc3axzqf3jthvd6kmnnmvodug')" class="fa fa-spotify p-hover-opacity"></i>
+            <i onclick="openTab('https:github.com/pinkeo')"class="fa fa-github p-hover-opacity"></i>
+          </div>
         </div>
-      </div>
       <hr>
       
       <!-- Subscribe -->
       <div class="p-white p-margin">
-        <div class="p-container p-padding p-black" style="padding: 6px 18px!important;border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+        <div class="p-container p-padding p-black" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
           <h4>Subscribe</h4>
         </div>
-        <div class="p-container p-white">
+        <div class="p-container p-xlarge p-padding">
           <p style="margin-bottom: 1rem;">Enter your e-mail below and get notified on the latest blog posts.</p>
           <p><input class="p-input p-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
           <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="p-button p-block p-red">Subscribe</button></p>
@@ -463,8 +464,6 @@ document.querySelector("#close").addEventListener("click", function(){
 
 <!-- END p-content -->
 </div>
-
-<!-- Subscribe Modal -->
 
 <!-- Footer.  -->
 
