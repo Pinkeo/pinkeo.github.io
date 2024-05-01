@@ -3,6 +3,10 @@ permalink: /
 title: "Pinkeo"
 author_profile: false
 redirect_from: 
-  - /about/
-  - /about.html
+  - /home/
+  - /home.html
+  - /index.html
+  - /index/
 ---
+Hi :)
+ເວັບໄຊນີ້ຈະເປັນບ່ອນເຜີຍແຜ່ງານຂຽນດ້ານ Academic ທີ່ຂອງນັກສຶກສາ ແລະ ອາຈານຈະພາກວິຊາ ວິສະວະກຳເອເລັກໂຕຣນິກ ແລະ ໂທລະຄົມມະນາຄົມ ຄະນະວິສະວະກຳສາດ ມະຫາວິທະຍາໄລແຫ່ງຊາດລາວ
